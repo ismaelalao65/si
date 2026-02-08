@@ -1,0 +1,7 @@
+/* Minimal placeholder CSS — prevents 404 in production */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* You can add global styles here if needed */

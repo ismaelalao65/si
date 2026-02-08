@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer" />
+    <title>Nounours d'amour - Le Cadeau Parfait</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-red': '#FF0000',
+              'brand-rose': '#FF1493',
+              'brand-pink': '#FF69B4',
+              'brand-passion': '#DC143C', // Retour à la couleur officielle de la palette
+              'brand-pale-pink': '#FFB6D9',
+              'brand-offwhite': '#F5F5F5',
+              'brand-romantic': '#FF69B4',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html { scroll-behavior: smooth; }
+      .fade-in { animation: fadeIn 0.8s ease-out; }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      
+      /* Animation cœurs flottants (Montée) */
+      @keyframes floatUp {
+        0% { 
+          transform: translateY(100vh) scale(0.6) rotate(0deg); 
+          opacity: 0; 
+        }
+        10% { opacity: var(--heart-opacity, 0.6); }
+        90% { opacity: var(--heart-opacity, 0.6); }
+        100% { 
+          transform: translateY(-20vh) scale(1.2) rotate(20deg); 
+          opacity: 0; 
+        }
+      }
+      .animate-float {
+        animation: floatUp linear infinite;
+        will-change: transform, opacity;
+      }
+
+      /* Animation cœurs flottants (Descente) */
+      @keyframes floatDown {
+        0% { 
+          transform: translateY(-20vh) scale(0.6) rotate(0deg); 
+          opacity: 0; 
+        }
+        10% { opacity: var(--heart-opacity, 0.6); }
+        90% { opacity: var(--heart-opacity, 0.6); }
+        100% { 
+          transform: translateY(100vh) scale(1.2) rotate(20deg); 
+          opacity: 0; 
+        }
+      }
+      .animate-float-down {
+        animation: floatDown linear infinite;
+        will-change: transform, opacity;
+      }
+
+      /* Custom scrollbar for gallery thumbnails */
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
