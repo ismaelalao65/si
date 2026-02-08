@@ -24,7 +24,7 @@ const IntroScreen: React.FC<IntroScreenProps> = ({ onEnter }) => {
              </div>
              
              <h1 className="font-serif text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-md">
-               Êtes-vous amoureux(se) ?
+               Êtes-vous amoureux(se) Nadine ?
              </h1>
              <p className="text-xl text-white/90 mb-10 font-medium max-w-xs mx-auto leading-relaxed">
                Découvrez le cadeau parfait pour exprimer vos sentiments.
