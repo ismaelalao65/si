@@ -5,8 +5,24 @@ const Footer: React.FC = () => {
     <footer className="bg-gray-900 text-gray-400 py-12 text-center">
       <div className="container mx-auto px-4">
         <p className="font-serif text-white text-xl font-bold mb-4">Nounours d'amour</p>
+        <div className="mb-8">
+          <p className="text-white font-semibold mb-3">Contact</p>
+          <div className="flex justify-center gap-8 text-sm mb-6">
+            <span className="flex items-center gap-2">
+              <span>📧 Email:</span>
+              <a href="mailto:ismaelalao6@gmail.com" className="text-blue-400 hover:text-blue-300">
+                ismaelalao6@gmail.com
+              </a>
+            </span>
+            <span className="flex items-center gap-2">
+              <span>📱 WhatsApp:</span>
+              <a href="https://wa.me/22948088405" className="text-green-400 hover:text-green-300">
+                +22948088405
+              </a>
+            </span>
+          </div>
+        </div>
         <div className="flex justify-center gap-6 text-sm mb-8">
-          <span>Contact</span>
           <span>CGV</span>
           <span>Mentions Légales</span>
         </div>
