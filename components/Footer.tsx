@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           <div className="flex justify-center gap-8 text-sm mb-6">
             <span className="flex items-center gap-2">
               <span>📧 Email:</span>
-              <a href="mailto:ismaelalao6@gmail.com" className="text-blue-400 hover:text-blue-300">
+              <a href="https://mail.google.com/mail/u/0/?to=ismaelalao6@gmail.com" className="text-blue-400 hover:text-blue-300" target="_blank" rel="noopener noreferrer">
                 ismaelalao6@gmail.com
               </a>
             </span>
